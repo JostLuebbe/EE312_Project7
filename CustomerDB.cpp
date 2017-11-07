@@ -1,6 +1,6 @@
 /*
- * Name:
- * EID:
+ * Name: Jost Luebbe
+ * EID: jl64249
  * Project 7, CRM part 2
  * EE 312, Spring 2017
  */
@@ -47,11 +47,39 @@ Customer& CustomerDB::operator[](int k) { // done, please do not edit
 }
 
 Customer& CustomerDB::operator[](String name) { // not done, your effort goes here
+	for(int i=0; i<this->size(); i++){
+		if(this->data[i].name == name){
+			return data[i];
+		}
+	}
+
+	if(this->size()==this->capacity){
+		this->capacity *= 2;
+		Customer* c_data = new Customer[capacity];
+		for(int i=0; i<this->size();i++){
+			c_data[i].name = this->data[i].name;
+			c_data[i].bottles = this->data[i].bottles;
+			c_data[i].diapers = this->data[i].diapers;
+			c_data[i].rattles = this->data[i].rattles;
+		}
+		delete[] data;
+		this->data = c_data;
+	}
+	Customer* c = new Customer(name);
+	this->data[this->size()] = *c;
+	this->length++;
+	return *c;
 }
 
 
 
 bool CustomerDB::isMember(String name) { // not done, your effort goes here
+	for(int i=0; i<this->size(); i++){
+		if(this->data[i].name == name){
+			return true;
+		}
+	}
+	return false;
 }
 
 

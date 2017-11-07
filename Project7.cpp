@@ -1,6 +1,6 @@
 /*
- * Name:
- * EID:
+ * Name: Jost Luebbe
+ * EID: jl64249
  * Project 7, CRM part 2
  * EE 312, Spring 2017
  */
@@ -33,7 +33,7 @@ void reset(void) {
  * to obtain a pointer to the inventory record using the item type name
  * word must be "Bottles", "Diapers" or "Rattles"
  * for example the expression *selectInventItem("Bottles") returns the 
- * current global variable for the number of bottls in the inventory
+ * current global variable for the number of bottles in the inventory
  */
 int* selectInventItem(String word) {
 	if (word == "Bottles") {
@@ -96,6 +96,8 @@ Customer* findMax(String type) {
 }
 
 void processPurchase() {
+	
+
 }
 
 void processSummarize() {
