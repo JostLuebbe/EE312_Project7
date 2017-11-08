@@ -92,6 +92,11 @@ int main(void) {
 	reset();
 	readInput("test3.txt");
 	reset();
+    readInput("Customtest2.txt");
+    reset();
+    readInput("Customtest3.txt");
+    reset();
+
     return 0;
 }
 

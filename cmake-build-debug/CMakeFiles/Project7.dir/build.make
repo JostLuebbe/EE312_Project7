@@ -43,10 +43,10 @@ RM = /cygdrive/c/Users/jostl/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7"
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/cmake-build-debug"
+CMAKE_BINARY_DIR = /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Project7.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Project7.dir/flags.make
 
 CMakeFiles/Project7.dir/main.cpp.o: CMakeFiles/Project7.dir/flags.make
 CMakeFiles/Project7.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project7.dir/main.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project7.dir/main.cpp.o -c "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project7.dir/main.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project7.dir/main.cpp.o -c /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/main.cpp
 
 CMakeFiles/Project7.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project7.dir/main.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/main.cpp" > CMakeFiles/Project7.dir/main.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/main.cpp > CMakeFiles/Project7.dir/main.cpp.i
 
 CMakeFiles/Project7.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project7.dir/main.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/main.cpp" -o CMakeFiles/Project7.dir/main.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/main.cpp -o CMakeFiles/Project7.dir/main.cpp.s
 
 CMakeFiles/Project7.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Project7.dir/main.cpp.o.provides.build: CMakeFiles/Project7.dir/main.
 
 CMakeFiles/Project7.dir/Project7.cpp.o: CMakeFiles/Project7.dir/flags.make
 CMakeFiles/Project7.dir/Project7.cpp.o: ../Project7.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project7.dir/Project7.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project7.dir/Project7.cpp.o -c "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/Project7.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project7.dir/Project7.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project7.dir/Project7.cpp.o -c /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/Project7.cpp
 
 CMakeFiles/Project7.dir/Project7.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project7.dir/Project7.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/Project7.cpp" > CMakeFiles/Project7.dir/Project7.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/Project7.cpp > CMakeFiles/Project7.dir/Project7.cpp.i
 
 CMakeFiles/Project7.dir/Project7.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project7.dir/Project7.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/Project7.cpp" -o CMakeFiles/Project7.dir/Project7.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/Project7.cpp -o CMakeFiles/Project7.dir/Project7.cpp.s
 
 CMakeFiles/Project7.dir/Project7.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Project7.dir/Project7.cpp.o.provides.build: CMakeFiles/Project7.dir/P
 
 CMakeFiles/Project7.dir/CustomerDB.cpp.o: CMakeFiles/Project7.dir/flags.make
 CMakeFiles/Project7.dir/CustomerDB.cpp.o: ../CustomerDB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project7.dir/CustomerDB.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project7.dir/CustomerDB.cpp.o -c "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/CustomerDB.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project7.dir/CustomerDB.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project7.dir/CustomerDB.cpp.o -c /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/CustomerDB.cpp
 
 CMakeFiles/Project7.dir/CustomerDB.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project7.dir/CustomerDB.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/CustomerDB.cpp" > CMakeFiles/Project7.dir/CustomerDB.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/CustomerDB.cpp > CMakeFiles/Project7.dir/CustomerDB.cpp.i
 
 CMakeFiles/Project7.dir/CustomerDB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project7.dir/CustomerDB.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/CustomerDB.cpp" -o CMakeFiles/Project7.dir/CustomerDB.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/CustomerDB.cpp -o CMakeFiles/Project7.dir/CustomerDB.cpp.s
 
 CMakeFiles/Project7.dir/CustomerDB.cpp.o.requires:
 
@@ -143,7 +143,7 @@ Project7.exe: CMakeFiles/Project7.dir/Project7.cpp.o
 Project7.exe: CMakeFiles/Project7.dir/CustomerDB.cpp.o
 Project7.exe: CMakeFiles/Project7.dir/build.make
 Project7.exe: CMakeFiles/Project7.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Project7.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Project7.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project7.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -162,6 +162,6 @@ CMakeFiles/Project7.dir/clean:
 .PHONY : CMakeFiles/Project7.dir/clean
 
 CMakeFiles/Project7.dir/depend:
-	cd "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7" "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7" "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/cmake-build-debug" "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/cmake-build-debug" "/cygdrive/c/Users/jostl/Documents/GitHub Repository/EE312_Project7/cmake-build-debug/CMakeFiles/Project7.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7 /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/cmake-build-debug /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/cmake-build-debug /cygdrive/c/Users/jostl/Documents/GitHub/EE312_Project7/cmake-build-debug/CMakeFiles/Project7.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Project7.dir/depend
 

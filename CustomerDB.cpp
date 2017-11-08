@@ -47,31 +47,26 @@ Customer& CustomerDB::operator[](int k) { // done, please do not edit
 }
 
 Customer& CustomerDB::operator[](String name) { // not done, your effort goes here
-	for(int i=0; i<this->size(); i++){
-		if(this->data[i].name == name){
+	for(int i=0; i<length; i++){
+		if(data[i].name == name){
 			return data[i];
 		}
 	}
 
-	if(this->size()==this->capacity){
-		this->capacity *= 2;
+	if(length==capacity){
+		capacity *= 2;
 		Customer* c_data = new Customer[capacity];
-		for(int i=0; i<this->size();i++){
-			c_data[i].name = this->data[i].name;
-			c_data[i].bottles = this->data[i].bottles;
-			c_data[i].diapers = this->data[i].diapers;
-			c_data[i].rattles = this->data[i].rattles;
+		for(int i=0; i<length; i++){
+            c_data[i] = data[i];
 		}
 		delete[] data;
-		this->data = c_data;
+		data = c_data;
 	}
-	Customer* c = new Customer(name);
-	this->data[this->size()] = *c;
+
+	this->data[length] = Customer(name);
 	this->length++;
-	return *c;
+	return data[length-1];
 }
-
-
 
 bool CustomerDB::isMember(String name) { // not done, your effort goes here
 	for(int i=0; i<this->size(); i++){

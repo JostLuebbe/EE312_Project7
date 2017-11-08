@@ -9,6 +9,9 @@
 #include "String.h"
 #include "Customer.h"
 #include "CustomerDB.h"
+#include <iostream>
+
+using namespace std;
 
 void readString(String&);
 void readNum(int&);
@@ -95,13 +98,55 @@ Customer* findMax(String type) {
 	return result;
 }
 
-void processPurchase() {
-	
+void processSummarize() {
+    cout << "There are " << *selectInventItem("Bottles") << " Bottles, " << *selectInventItem("Diapers") << " Diapers and " << *selectInventItem("Rattles") << " Rattles in inventory\n";
+    cout << "we have had a total of " << database.length << " different customers\n";
 
+    if(findMax("Bottles")==0){
+        cout << "no one has purchased any Bottles\n";
+    }
+    else{
+        cout << findMax("Bottles")->name.c_str() << " has purchased the most Bottles (" << findMax("Bottles")->bottles << ")\n";
+    }
+    if(findMax("Diapers")==0){
+        cout << "no one has purchased any Diapers\n";
+    }
+    else{
+        cout << findMax("Diapers")->name.c_str() << " has purchased the most Diapers (" << findMax("Diapers")->diapers << ")\n";
+    }
+    if(findMax("Rattles")==0){
+        cout << "no one has purchased any Rattles\n";
+    }
+    else{
+        cout << findMax("Rattles")->name.c_str() << " has purchased the most Rattles (" << findMax("Rattles")->rattles << ")\n";
+    }
 }
 
-void processSummarize() {
+void processPurchase() {
+    String cust_name;
+    String pur_item_type;
+    int pur_item_cnt = 0;
+
+    readString(cust_name);
+    readString(pur_item_type);
+    readNum(pur_item_cnt);
+
+    if(pur_item_cnt>*selectInventItem(pur_item_type)){
+        cout << "Sorry " << cust_name.c_str() << ", we only have " << *selectInventItem(pur_item_type) << " " << pur_item_type.c_str() << "\n";
+        return;
+    }
+
+    (*selectInventItem(pur_item_type, database[cust_name])) += pur_item_cnt;
+    (*selectInventItem(pur_item_type)) -= pur_item_cnt;
+
 }
 
 void processInventory() {
+    String inv_item_type;
+    int inv_item_cnt;
+
+    readString(inv_item_type);
+    readNum(inv_item_cnt);
+
+    (*selectInventItem(inv_item_type)) += inv_item_cnt;
 }
